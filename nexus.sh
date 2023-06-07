@@ -12,10 +12,11 @@ wget https://sonatype-download.global.ssl.fastly.net/repository/downloads-prod-g
 tar xzf nexus-3.29.2-02-unix.tar.gz -C /opt/nexus --strip-components=1
 chown -R nexus:nexus /opt/nexus
 
-nano /opt/nexus/bin/nexus.vmoptions
-
-
-
+vi /opt/nexus/bin/nexus.vmoptions
+#remove . infront of sonatype in this file(there are two .. but you got to remove 1)
+vi /opt/nexus/bin/nexus.rc
+unhash it and nexus is the user
+start nexus sudo -u nexus /opt/nexus/bin/nexus start
 ```
 https://www.howtoforge.com/how-to-install-and-configure-nexus-repository-manager-on-ubuntu-20-04/
 ```
