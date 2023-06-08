@@ -16,7 +16,7 @@ vi /opt/nexus/bin/nexus.vmoptions
 #remove . infront of sonatype in this file(there are two .. but you got to remove 1)
 vi /opt/nexus/bin/nexus.rc
 unhash it and nexus is the user
-start nexus sudo -u nexus /opt/nexus/bin/nexus start
+start nexus=         sudo -u nexus /opt/nexus/bin/nexus start
 ```
 https://www.howtoforge.com/how-to-install-and-configure-nexus-repository-manager-on-ubuntu-20-04/
 ```
